@@ -13,5 +13,9 @@ h1{
 
 p{
     margin:0px;
-    width:500px;
+    width:600px;
+}
+
+span#result{
+    color:red;
 }

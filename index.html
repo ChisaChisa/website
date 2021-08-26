@@ -5,13 +5,35 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        Civil Engineering Spreadsheets
+    <header id="page-header">
+        Civil Engineering <br> Calculation Forms and Spreadsheets
     </header>
-    <br />
-    <br />
-    <br />
-    <br />
+    <script src="addition.js"></script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Liquefaction Susceptibility</h1>
+    <p>- According to "AASHTO LRFD 2012"</p>
+    <br>
+    <p>PI(Plasticity Index) = <input type="text" id="PI"></p>
+    <p>wc(Water Content) = <input type="text" id="wc"> (%)</p>
+    <p>LL(Liquid Limit) = <input type="text" id="LL"> (%)</p>
+    <p>Result: This soil is <span id="result"></span></p>
+    <br>
+    <p>- If Susceptible: Further evaluate factor of safety for liquefaction</p>
+    <p>- If NOT susceptible: No need futher calculation</p>
+
+    <br>
+    <button onclick="printNumber()" id="printer">Analyze Susceptibility</button>
+
+    
+    
+    <br>
+    <br>
+    <br>
+    <br>
     <h1>Soil Pressure calculation sheet</h1>
     <p>- For both static and seismic conditions</p>
     <p>- For multiple soil layers</p>
@@ -23,4 +45,6 @@
     <div><video width="400" height="auto" controls>
         <source src="soil.mp4" type="video/mp4">
     </video></div>
+    
 </body>
+
